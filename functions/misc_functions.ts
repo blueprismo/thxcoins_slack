@@ -1,7 +1,6 @@
 import { SlackAPIClient } from "https://deno.land/x/deno_slack_sdk@2.5.0/deps.ts";
 import ThxDataStore from "../datastores/thx_datastore.ts";
 import { ThanksCoinsUser } from "../classes/thxcoins.ts";
-import { DatastoreItem } from "deno-slack-api/typed-method-types/apps.ts";
 
 function check_plusplus(message: string): number {
   let counter = 0
@@ -78,15 +77,5 @@ const upsertDBUser = async (client: SlackAPIClient, user: ThanksCoinsUser) => {
     return true;
   }
 }
-
-// await client.apps.datastore.put({
-//   datastore: "thxcoins",
-//   item: {
-//     id: inputs.receiving_thanks_id,
-//     human_name: receiving_thanks_name,
-//     total_coins: 0,
-//     budget: 20,
-//   }
-// });
 
 export { check_plusplus, extract_user , checkDBUser, upsertDBUser }

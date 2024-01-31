@@ -55,7 +55,7 @@ export default SlackFunction(
 
     // Example response:
     // {"ok":true,"datastore":"thxcoins","items":
-    // [{"id":"U034GPMC78S","total_coins":3,"budget":20,"human_name":"oussama.louhaibi"}, {id: "2"...}]}
+    // [{"id":"U1234567","total_coins":3,"budget":20,"human_name":"john.foo"}, {id: "2"...}]}
     if (queryResponse.ok) {
       // We want to have a total_coins + human_name table here.  
       // for (let i = 0; i < queryResponse.items.length; i++){

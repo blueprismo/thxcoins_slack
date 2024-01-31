@@ -1,4 +1,4 @@
-import { DefineWorkflow, Schema, SlackAPI, SlackFunction } from "deno-slack-sdk/mod.ts";
+import { DefineWorkflow, Schema } from "deno-slack-sdk/mod.ts";
 import { GetStatsFunction } from "../functions/get_stats_function.ts";
 /**
 

@@ -14,7 +14,8 @@ const messageTrigger: Trigger<typeof ListenThanksWorkflow.definition> = {
   workflow: `#/workflows/${ListenThanksWorkflow.definition.callback_id}`,
   event: {
     event_type: TriggerEventTypes.MessagePosted,
-    channel_ids: ['C0472TGMZK7','C06C0TMG6S1'],
+    // eninstuff (test-dev), sre-squad, sre-raucherraum, 
+    channel_ids: ['C0472TGMZK7','C02RL7JPM0U','C04P34JKP6J','C02HUGCRQN5'],
     filter: {
       version: 1,
       root: {

@@ -2,6 +2,7 @@ import { Manifest } from "deno-slack-sdk/mod.ts";
 
 import ListenThanksWorkflow from "./workflows/listen_thx_workflow.ts";
 import StatisticsThanksWorkflow from "./workflows/stats_thx_workflow.ts";
+import RefillThanksWorkflow from "./workflows/schedule_refill_workflow.ts";
 import ThxDataStore from "./datastores/thx_datastore.ts";
 
 /**
@@ -13,7 +14,7 @@ export default Manifest({
   name: "gratitude",
   description: "An app for giving gratitude in a simple way",
   icon: "assets/thanks_icon.png",
-  workflows: [ListenThanksWorkflow, StatisticsThanksWorkflow],
+  workflows: [ListenThanksWorkflow, StatisticsThanksWorkflow, RefillThanksWorkflow],
   outgoingDomains: [],
   datastores: [ThxDataStore],
   botScopes: [

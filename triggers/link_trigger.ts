@@ -23,21 +23,3 @@ const statsTrigger: Trigger<typeof StatisticsThanksWorkflow.definition> = {
 };
 
 export default statsTrigger;
-
-// Example event MessagePosted payload
-// {
-//   "team_id": "T0123ABC",
-//   "enterprise_id": "E0123ABC",
-//   "event_id": "Ev0123ABC",
-//   "event_timestamp": 1630623713,
-//   "type": "event",
-//   "data": {
-//     "channel_id": "C0123ABC",
-//     "channel_type": "public/private/im/mpim",
-//     "event_type": "slack#/events/message_posted",
-//     "message_ts": "1355517523.000005",
-//     "text": "Hello world",
-//     "thread_ts": "1355517523.000006", // Nullable
-//     "user_id": "U0123ABC",
-//   }
-// }
